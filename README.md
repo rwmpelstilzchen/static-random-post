@@ -15,6 +15,10 @@ My solution is taking this method and making a single file redirecting to a rand
 
 ### Pelican
 
+First of all, you might want to know this ability is also provided through an [‘official’ plugin](https://github.com/getpelican/pelican-plugins/tree/master/random_article).
+
+If you still want to use the non-plugin way:
+
 * Place `pelican.html` in the `templates` subdirectory of your theme.
 * Rename it to something more proper, say `random.html`.
 * Tell Pelican to use this file by adding `random` to `DIRECT_TEMPLATES` in your `pelicanconf.py`; for example: `DIRECT_TEMPLATES = ('index', 'categories', 'authors', 'archives', 'random')`.
