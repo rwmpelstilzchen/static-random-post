@@ -7,7 +7,7 @@ Randomness in a static website is a problem. When I moved to [Jekyll](http://jek
 
 What I didn't like in enrmarc solution was that a list of all posts was included in each and every one of them. This is *n²* space- (and therefore time- when transmitting the files) [complexity](http://en.wikipedia.org/wiki/Computational_complexity_theory). Boo hoo.
 
-My solution is taking this method and making a single file redirecting to a random post. It has support for Jekyll and Pelican; if you want to add another system, just for this repository, add whatever you need, and send me a pull request ☺
+My solution is taking this method and making a single file redirecting to a random post. It has support for Jekyll and Pelican; if you want to add another system, just fork this repository, add whatever you need, and send me a pull request ☺
 
 
 
@@ -15,9 +15,9 @@ My solution is taking this method and making a single file redirecting to a rand
 
 ### Pelican
 
-First of all, you might want to know this ability is also provided through an [‘official’ plugin](https://github.com/getpelican/pelican-plugins/tree/master/random_article).
+First of all, you might want to know this ability is also provided through a [plugin](https://github.com/getpelican/pelican-plugins/tree/master/random_article).
 
-If you still want to use the non-plugin way:
+If you want to use the non-plugin approach:
 
 * Place `pelican.html` in the `templates` subdirectory of your theme.
 * Rename it to something more proper, say `random.html`.
